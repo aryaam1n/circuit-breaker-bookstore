@@ -8,15 +8,15 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @SpringBootApplication
-public class SpringCloudCircuitBreakerBookstoreApplication {
+public class SpringCloudCircuitBreakerMovieInfoApplication {
 
-	@RequestMapping(value = "/recommended")
+	@RequestMapping(value = "/movieinfo")
 	public Mono<String> readingList(){
-		return Mono.just("Spring in Action (Manning), Cloud Native Java (O'Reilly), Learning Spring Boot (Packt)");
+		return Mono.just("The Godfather, Star Wars, Titanic");
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudCircuitBreakerBookstoreApplication.class, args);
+		SpringApplication.run(SpringCloudCircuitBreakerMovieInfoApplication.class, args);
 	}
 
 }
