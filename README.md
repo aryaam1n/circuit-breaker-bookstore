@@ -1,1 +1,1 @@
-# spring-circuit-breaker
+# circuit-breaker-bookstore
